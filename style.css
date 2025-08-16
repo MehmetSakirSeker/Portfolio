@@ -41,14 +41,14 @@ nav {
     padding: 1.5rem 5%;
     background: rgba(0,0,0,0.3);
     position: fixed;
-    width: 90%; /* Genişliği biraz daralttık */
-    max-width: 1200px; /* Maksimum genişlik ekledik */
+    width: 90%; 
+    max-width: 1200px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    border-radius: 0 0 10px 10px; /* Köşeleri yuvarlak */
+    border-radius: 0 0 10px 10px; 
 }
 
 .nav-left {
@@ -56,7 +56,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1px;
-    white-space: nowrap; /* Metnin alt satıra kaymasını engeller */
+    white-space: nowrap; 
 }
 
 .nav-right {
@@ -64,65 +64,65 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem; /* Boşlukları biraz azalttık */
-    flex-wrap: wrap; /* Küçük ekranlarda alt satıra kaydırabilir */
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
     justify-content: flex-end;
 }
 
 .nav-right li {
-    white-space: nowrap; /* Link metinlerinin alt satıra kaymasını engeller */
+    white-space: nowrap; 
 }
 
 .nav-right a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem; /* Yazı boyutunu küçülttük */
+    font-size: 0.95rem; 
     transition: color 0.3s;
     position: relative;
     padding: 0.3rem 0;
 }
 
 
-/* Header - Profil Foto ve Bilgiler */
+/* Header  */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 150px 10% 100px; /* Üst boşluğu artırdık */
-    gap: 4rem; /* Aradaki boşluğu artırdık */
+    padding: 150px 10% 100px; 
+    gap: 4rem; 
     flex-wrap: wrap;
     background: linear-gradient(135deg, #0b0b15 0%, #1e1e2f 100%);
     border-bottom: 1px solid #222;
 }
 
-/* Profil Fotoğrafı */
+/* Profile Photo */
 .header-container .profile-photo {
     order: 1;
     flex: 0 0 auto;
-    margin-bottom: 2rem; /* Alt boşluk ekledik */
+    margin-bottom: 2rem; 
 }
 
 .header-container .profile-photo img {
-    width: 280px; /* Boyutu biraz büyüttük */
+    width: 280px; 
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #1e90ff; /* Kalınlığı artırdık */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.6); /* Gölgeyi güçlendirdik */
+    border: 5px solid #1e90ff; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6); 
 }
 
-/* Profil Bilgileri */
+/* Profile Info */
 .header-container .profile-info {
     order: 2;
-    flex: 1 1 350px; /* Genişliği artırdık */
+    flex: 1 1 350px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem; /* Boşluğu artırdık */
+    gap: 1.5rem; 
     text-align: center;
-    padding: 2rem 0; /* Dikey padding ekledik */
+    padding: 2rem 0; 
 }
 
 .header-container .profile-info p {
@@ -166,14 +166,14 @@ nav {
     box-shadow: 0 8px 20px rgba(30,144,255,0.5);
 }
 
-/* Sectionlar */
+/* Sections */
 section {
-    min-height: 100vh;  /* Ekran yüksekliği kadar */
-    display: flex;      /* İçeriği ortalamak için */
+    min-height: 100vh;  
+    display: flex;      
     flex-direction: column;
-    justify-content: center; /* Dikey ortalama */
-    align-items: center;     /* Yatay ortalama */
-    padding: 6rem 2rem; /* Üst boşluk navbar çakışmasını engeller */
+    justify-content: center; 
+    align-items: center;     
+    padding: 6rem 2rem; 
     box-sizing: border-box;
 }
 
@@ -189,7 +189,7 @@ section {
     margin: 0 auto;
 }
 .about-photo {
-    flex: 0 0 250px; /* Genişliği biraz küçülttük */
+    flex: 0 0 250px; 
 }
 @media (max-width: 1200px) {
     .about-photo {
@@ -210,11 +210,11 @@ section {
 .about-photo img {
     width: 450px;
     height: 450px;
-    border-radius: 50%; /* Yuvarlak yapmak için */
-    object-fit: cover; /* Fotoğrafın oranını korur */
+    border-radius: 50%; 
+    object-fit: cover; 
     border: 3px solid #1e90ff;
     box-shadow: 0 10px 30px rgba(30, 144, 255, 0.2);
-    display: block; /* Kenar boşluklarını düzgün ayarlamak için */
+    display: block; 
 }
 
 .about-subtitle {
@@ -227,9 +227,9 @@ section {
 
 .about-content {
     display: flex;
-    gap: 4rem; /* Boşluğu artırdık */
+    gap: 4rem; 
     align-items: flex-start;
-    margin-top: 3rem; /* Üst boşluk ekledik */
+    margin-top: 3rem; 
 }
 
 .about-cards {
@@ -329,9 +329,9 @@ section {
     color: white;
 }
 .about-text {
-    line-height: 1.8; /* Satır aralığını artırdık */
-    text-align: left; /* Metni sola hizaladık */
-    margin-top: 1rem; /* Kartlardan boşluk */
+    line-height: 1.8; 
+    text-align: left; 
+    margin-top: 1rem; 
 }
 
 .section-title span {
@@ -490,15 +490,15 @@ section {
 }
 
 .projects-grid {
-    display: flex; /* Grid yerine flex kullanıyoruz */
-    flex-wrap: wrap; /* Taşanları alt satıra al */
+    display: flex; 
+    flex-wrap: wrap; 
     gap: 2rem;
-    justify-content: flex-start; /* Sola hizalı */
+    justify-content: flex-start; 
 }
 
 .project-card {
-    flex: 0 0 calc(33.333% - 2rem); /* 3'lü sıralama için */
-    min-width: 300px; /* Minimum genişlik */
+    flex: 0 0 calc(33.333% - 2rem); 
+    min-width: 300px; 
     background: rgba(30, 30, 50, 0.6);
     border-radius: 10px;
     overflow: hidden;
@@ -662,11 +662,9 @@ section {
 }
 @media (max-width: 1024px) {
     .project-card {
-        flex: 0 0 calc(50% - 2rem); /* Orta boy ekranlarda 2'li sıralama */
+        flex: 0 0 calc(50% - 2rem); 
     }
 }
-
-/* Font Awesome için (icons) */
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -778,14 +776,14 @@ section {
     }
 
     .projects-grid {
-        justify-content: center; /* Mobilde ortala */
+        justify-content: center; 
     }
     #contact {
         padding: 4rem 5% 2rem;
     }
     .project-card {
-        flex: 0 0 100%; /* Mobilde tek sütun */
-        max-width: 400px; /* Maksimum genişlik */
+        flex: 0 0 100%; 
+        max-width: 400px; 
     }
 
     .contact-subtitle {
