@@ -189,7 +189,9 @@ section {
     margin: 0 auto;
 }
 .about-photo {
-    flex: 0 0 250px; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 @media (max-width: 1200px) {
     .about-photo {
@@ -208,13 +210,12 @@ section {
     }
 }
 .about-photo img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%; 
-    object-fit: cover; 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
     border: 3px solid #1e90ff;
     box-shadow: 0 10px 30px rgba(30, 144, 255, 0.2);
-    display: block; 
 }
 
 .about-subtitle {
@@ -227,11 +228,11 @@ section {
 
 .about-content {
     display: flex;
-    gap: 4rem; 
-    align-items: flex-start;
-    margin-top: 3rem; 
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
 }
-
 .about-cards {
     display: flex;
     gap: 1.5rem;
@@ -305,6 +306,10 @@ section {
     .about-subtitle {
         font-size: 1.5rem;
         margin-top: -1rem;
+    }
+    .about-photo img {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -392,24 +397,29 @@ section {
 }
 /* Skills Section */
 .skills-container {
-    margin-top: 4rem;
-    padding-top: 3rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .skills-columns {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .skills-column {
     flex: 1;
     min-width: 250px;
+    max-width: 350px;
     background: rgba(30, 30, 50, 0.4);
     padding: 1.5rem;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .skills-category {
@@ -765,6 +775,7 @@ section {
 
     .skills-column {
         min-width: 100%;
+        max-width: 100%;
     }
     #projects {
         padding: 4rem 5%;
