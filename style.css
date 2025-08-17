@@ -82,43 +82,6 @@ nav {
     position: relative;
     padding: 0.3rem 0;
 }
-/* Navigation bar hover effect */
-.nav-right a {
-    position: relative;
-    transition: all 0.3s ease;
-    color: #b9e1ed; 
-}
-
-.nav-right a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px rgba(185, 225, 237, 0.7); 
-}
-
-.nav-right a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #1e90ff;
-    transition: width 0.3s ease;
-}
-
-.nav-right a:hover::after {
-    width: 100%;
-    box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
-}
-
-.nav-right a.active {
-    color: #fff;
-    text-shadow: 0 0 10px rgba(185, 225, 237, 0.9);
-}
-
-.nav-right a.active::after {
-    width: 100%;
-  
-
 
 /* Header  */
 .header-container {
