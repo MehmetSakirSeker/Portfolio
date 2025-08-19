@@ -68,14 +68,13 @@ nav {
 }
 
 .nav-right a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
+    transition: color 0.3s;
 }
 
 .nav-right a::after {
@@ -88,7 +87,8 @@ nav {
     background: linear-gradient(90deg, #1e90ff, #00d4ff);
     transition: width 0.3s ease;
 }
-.nav-right a:hover::after {
+.nav-right a:hover::after,
+.nav-right a.active::after {
     width: 100%;
 }
 
@@ -112,6 +112,9 @@ nav {
 .nav-right a:hover .glow {
     opacity: 1;
     transform: scale(1.3);
+}
+.nav-right a.active {
+    color: #00d4ff;
 }
 
 .nav-right a:hover i {
