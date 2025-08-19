@@ -396,6 +396,7 @@ section {
 }
 /* Skills Section */
 #skills {
+    scroll-margin-top: 100px;
     background-color: #0f0f1f;
     padding: 6rem 10%;
     position: relative;
