@@ -87,7 +87,11 @@ nav {
     background: linear-gradient(90deg, #1e90ff, #00d4ff);
     transition: width 0.3s ease;
 }
-.nav-right a:hover::after,
+
+.nav-right a:hover::after {
+    width: 100%;
+}
+
 .nav-right a.active::after {
     width: 100%;
 }

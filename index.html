@@ -223,6 +223,17 @@
                     </div>
                 </div>
             </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-status">Done</div>
+                <div class="project-content">
+                    <h4 class="project-title">Flutter Todo App with GetX</h4>
+                    <p class="project-type">Mobile</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MehmetSakirSeker/To-Do-App" class="project-link">Github</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -260,5 +271,49 @@
     </footer>
 </section>
 
+<script>
+    // Active link'i section'a göre güncelle
+    const navLinks = document.querySelectorAll('.nav-right a');
+    const sections = document.querySelectorAll('section, header');
+
+    function updateActiveLink() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.scrollY >= sectionTop - 200) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        // Header durumunu kontrol et
+        if (window.scrollY < sections[1].offsetTop - 200) {
+            currentSection = 'about'; // Header alanında default olarak about
+        }
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Scroll olduğunda güncelle
+    window.addEventListener('scroll', updateActiveLink);
+
+    // Link tıklandığında da güncelle
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Sayfa yüklendiğinde
+    updateActiveLink();
+</script>
 </body>
 </html>
